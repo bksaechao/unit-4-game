@@ -1,3 +1,22 @@
 body {
     background-image: url(../images/memphis-colorful.png);
 }
+
+h1 {
+    background-color: #ffffff;
+    color: #3688be;
+}
+.instructions {
+    max-width: 500px;
+    background-color: #ffffff;
+}
+
+p {
+    color: rgb(137, 77, 172);
+}
+
+h3 {
+    background-color: #ffffff;
+    color: #3688be;
+}
+
