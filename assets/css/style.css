@@ -15,6 +15,16 @@ p {
     color: rgb(137, 77, 172);
 }
 
+.winLoss {
+    color: rgb(137, 77, 172);
+    font-size: 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 10px 0px;
+    height:fit-content;
+    width: fit-content;
+}
+
 h3 {
     background-color: #ffffff;
     color: #3688be;
