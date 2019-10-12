@@ -26,27 +26,23 @@ $(document).ready(function () {
     console.log(numGen);
 
     //Random number for each crystal
-    var crys1 = Math.floor(Math.random() * 12) + 1
+    var crys1 = Math.floor(Math.random() * 11) + 1
     $("#blueCrystal").html(crys1);
     console.log(crys1);
-    var crys2 = Math.floor(Math.random() * 12) + 1
+    var crys2 = Math.floor(Math.random() * 11) + 1
     $("#redCrystal").html(crys2);
     console.log(crys2);
-    var crys3 = Math.floor(Math.random() * 12) + 1
+    var crys3 = Math.floor(Math.random() * 11) + 1
     $("#greenCrystal").html(crys3);
     console.log(crys3);
-    var crys4 = Math.floor(Math.random() * 12) + 1
+    var crys4 = Math.floor(Math.random() * 11) + 1
     $("#purpleCrystal").html(crys4);
     console.log(crys4);
 
-    //if statement to prevent duplicate numbers(doesn't seem to work lol)
-    // if (crys1 === crys2 || crys1 === crys3 || crys1 === crys4) {
-    //     crys1;
-    // } else if (crys2 === crys1 || crys2 === crys3 || crys2 === crys4) {
-    //     crys2;
-    // } else if (crys3 === crys1 || crys3 === crys2 || crys3 === crys4) {
-    //     crys3;
-    // } else if (crys4 === crys1 || crys4 === crys2 || crys4 === crys3) {
-    //     crys4;
-    // }
+    $("#blueCrystal").on("click", function () {
+        currentScore = totScore + crys1;
+        console.log(currentScore);
+        $("#totalScore").html(currentScore);
+
+    })
 });
