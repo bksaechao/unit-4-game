@@ -37,19 +37,22 @@ $(document).ready(function () {
 
     //reset function
     function reset() {
-        totScore = 0;
-        $("#totalScore").html(totScore);
-        numGen = Math.floor(Math.random() * 101) + 19;
-        $("#rNumber").html(numGen);
-        crys1 = Math.floor(Math.random() * 12) + 1;
-        crys2 = Math.floor(Math.random() * 12) + 1;
-        crys3 = Math.floor(Math.random() * 12) + 1;
-        crys4 = Math.floor(Math.random() * 12) + 1;
-        console.log("Blue crystal: " + crys1);
-        console.log("Red crystal: " + crys2);
-        console.log("Green crystal: " + crys3);
-        console.log("Purple crystal: " + crys4);
-        console.log("---------------")
+        setTimeout(function () {
+            totScore = 0;
+            $('#result').html('');
+            $("#totalScore").html(totScore);
+            numGen = Math.floor(Math.random() * 101) + 19;
+            $("#rNumber").html(numGen);
+            crys1 = Math.floor(Math.random() * 12) + 1;
+            crys2 = Math.floor(Math.random() * 12) + 1;
+            crys3 = Math.floor(Math.random() * 12) + 1;
+            crys4 = Math.floor(Math.random() * 12) + 1;
+            console.log("Blue crystal: " + crys1);
+            console.log("Red crystal: " + crys2);
+            console.log("Green crystal: " + crys3);
+            console.log("Purple crystal: " + crys4);
+            console.log("---------------")
+        }, 3000);
     }
 
 
@@ -60,12 +63,12 @@ $(document).ready(function () {
 
         //win/loss conditions
         if (totScore > numGen) {
-            alert("You Lose!")
+            $('#result').html('You Lose!')
             loss++;
             $("#l").html(loss);
             reset()
         } else if (totScore === numGen) {
-            alert("You Win!")
+            $('#result').html('You Win!')
             win++;
             $("#w").html(win);
             reset()
@@ -75,13 +78,14 @@ $(document).ready(function () {
     $("#redCrystal").on("click", function () {
         totScore += crys2;
         $("#totalScore").html(totScore);
+
         if (totScore > numGen) {
-            alert("You Lose!")
+            $('#result').html('You Lose!')
             loss++;
-            reset()
             $("#l").html(loss);
+            reset()
         } else if (totScore === numGen) {
-            alert("You Win!")
+            $('#result').html('You Win!')
             win++;
             $("#w").html(win);
             reset()
@@ -93,12 +97,12 @@ $(document).ready(function () {
         $("#totalScore").html(totScore);
 
         if (totScore > numGen) {
-            alert("You Lose!")
+            $('#result').html('You Lose!')
             loss++;
             $("#l").html(loss);
             reset()
         } else if (totScore === numGen) {
-            alert("You Win!")
+            $('#result').html('You Win!')
             win++;
             $("#w").html(win);
             reset()
@@ -109,12 +113,12 @@ $(document).ready(function () {
         $("#totalScore").html(totScore);
 
         if (totScore > numGen) {
-            alert("You Lose!")
+            $('#result').html('You Lose!')
             loss++;
             $("#l").html(loss);
             reset()
         } else if (totScore === numGen) {
-            alert("You Win!")
+            $('#result').html('You Win!')
             win++;
             $("#w").html(win);
             reset()
