@@ -4,6 +4,8 @@
   <li>4 crystals are displayed, each with different hidden values that are revealed once clicked on</li>
   <li>If the user matches the number, a win is gained and the game is reset. If the user fails to match the number, a loss is gained and the game is also reset.</li>
   <li>The generated number and values of each crystal changes everytime a user wins or loses</li>
+  <li><strong>Try it</strong> <a target="_blank" href="https://bksaechao.github.io/unit-4-game/">here!</a>
+    </u>
   
 <h2>Applied Knowledge</h2>
    *This assignment challenged the student to use a combination of html, css, and javascript/jquery to create an interactive mini game.<br>
